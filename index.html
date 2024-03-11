@@ -1,129 +1,115 @@
 <!doctype html>
 
 <html>
-  <head>
-    <title>Viktor's homepage</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
 
-  <body>
-    <h1 class="title" style="vertical-align: middle">
-      Welcome to my homepage!
-    </h1>
+<head>
+  <title>Viktor's homepage</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
 
-    <div>
-      This page is for showing my Curriculum Vitae. Functionality will be added
-      in the future!
-    </div>
+<body>
+  <h1 class="title" style="vertical-align: middle">
+    Welcome to my homepage!
+  </h1>
 
-    <style>
-      .libutton {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 7px;
-        margin-top: 5px;
-        text-align: center;
-        outline: none;
-        text-decoration: none !important;
-        color: #ffffff !important;
-        width: 200px;
-        height: 32px;
-        border-radius: 16px;
-        background-color: #0a66c2;
-        font-family: "SF Pro Text", Helvetica, sans-serif;
+  <div>
+    This page is for showing my Curriculum Vitae. Functionality will be added
+    in the future!
+  </div>
+
+  <style>
+    .libutton {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 7px;
+      margin-top: 5px;
+      text-align: center;
+      outline: none;
+      text-decoration: none !important;
+      color: #ffffff !important;
+      width: 200px;
+      height: 32px;
+      border-radius: 16px;
+      background-color: #0a66c2;
+      font-family: "SF Pro Text", Helvetica, sans-serif;
+    }
+  </style>
+  <a class="libutton"
+    href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=viktorvallmark"
+    target="_blank">Follow on LinkedIn</a>
+  <style>
+    #cv-button {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 7px;
+      margin: 5px;
+      margin-left: 0px;
+      text-align: center;
+      outline: none;
+      text-decoration: none !important;
+      color: #ffffff !important;
+      width: 215px;
+      height: 32px;
+      border-radius: 16px;
+      background-color: #0a66c2;
+      font-family: "SF Pro Text", Helvetica, sans-serif;
+    }
+  </style>
+
+  <script>
+    function showElement() {
+      const pic = document.getElementById("cv");
+      if (pic.style.display === "block") {
+        pic.style.display = "none";
+      } else {
+        pic.style.display = "block";
       }
-    </style>
-    <a
-      class="libutton"
-      href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=viktorvallmark"
-      target="_blank"
-      >Follow on LinkedIn</a
-    >
-    <style>
-      #cv-button {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 7px;
-        margin: 5px;
-        margin-left: 0px;
-        text-align: center;
-        outline: none;
-        text-decoration: none !important;
-        color: #ffffff !important;
-        width: 215px;
-        height: 32px;
-        border-radius: 16px;
-        background-color: #0a66c2;
-        font-family: "SF Pro Text", Helvetica, sans-serif;
+    }
+
+    function showElement2() {
+      const pic = document.getElementById("ture");
+      if (pic.style.display === "block") {
+        pic.style.display = "none";
+      } else {
+        pic.style.display = "block";
       }
-    </style>
+    }
+  </script>
 
-    <script>
-      function showElement() {
-        const pic = document.getElementById("cv");
-        if (pic.style.display === "block") {
-          pic.style.display = "none";
-        } else {
-          pic.style.display = "block";
-        }
-      }
+  <button id="cv-button" onclick="showElement()" type="button">CV</button>
 
-      function showElement2() {
-        const pic = document.getElementById("ture");
-        if (pic.style.display === "block") {
-          pic.style.display = "none";
-        } else {
-          pic.style.display = "block";
-        }
-      }
-    </script>
+  <style>
+    #ture-button {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 7px;
+      text-align: center;
+      outline: none;
+      margin-bottom: 5px;
+      text-decoration: none !important;
+      color: #ffffff !important;
+      width: 215px;
+      height: 32px;
+      border-radius: 16px;
+      background-color: #0a66c2;
+      font-family: "SF Pro Text", Helvetica, sans-serif;
+    }
+  </style>
 
-    <button id="cv-button" onclick="showElement()" type="button">CV</button>
+  <button id="ture-button" onclick="showElement2()" type="button">
+    Pic of my dog
+  </button>
 
-    <style>
-      #ture-button {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 7px;
-        text-align: center;
-        outline: none;
-        margin-bottom: 5px;
-        text-decoration: none !important;
-        color: #ffffff !important;
-        width: 215px;
-        height: 32px;
-        border-radius: 16px;
-        background-color: #0a66c2;
-        font-family: "SF Pro Text", Helvetica, sans-serif;
-      }
-    </style>
+  <img id="ture" src="ture_background.jpg" alt="Picture of my dog" width="750" height="1000"
+    style="border: 1px solid black; display: none" />
+  <img id="cv" src="CV.jpg" alt="CV" width="750" height="1000" style="border: 1px solid black; display: none" />
+</body>
 
-    <button id="ture-button" onclick="showElement2()" type="button">
-      Pic of my dog
-    </button>
-
-    <img
-      id="ture"
-      src="ture_background.jpg"
-      alt="Picture of my dog"
-      width="750"
-      height="1000"
-      style="border: 1px solid black; display: none"
-    />
-    <img
-      id="cv"
-      src="CV.jpg"
-      alt="CV"
-      width="750"
-      height="1000"
-      style="border: 1px solid black; display: none"
-    />
-  </body>
 </html>
